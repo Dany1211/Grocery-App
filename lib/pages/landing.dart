@@ -1,3 +1,4 @@
+import 'package:GROCERY_APP/pages/home.dart';
 import 'package:flutter/material.dart';
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -27,19 +28,24 @@ class _LandingState extends State<Landing> {
                   mainAxisAlignment: MainAxisAlignment.end,
                    children: [
                   
-                     Container(
-                      padding: EdgeInsets.only(left: 30.0,top: 10.0,right: 20,bottom: 10),
-                      
-                      decoration: BoxDecoration(color: Color(0xffffcc3f),borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomLeft: Radius.circular(20))),
-                      
-                      child: Row(
-                        children: [
-                          Text("Next",style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.w500),),
-                          SizedBox(width: 20.0,),
-                          Icon(Icons.arrow_forward_ios),
-                        ],
-                       
-                      ),
+                     GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));
+                      },
+                       child: Container(
+                        padding: EdgeInsets.only(left: 30.0,top: 10.0,right: 20,bottom: 10),
+                        
+                        decoration: BoxDecoration(color: Color(0xffffcc3f),borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomLeft: Radius.circular(20))),
+                        
+                        child: Row(
+                          children: [
+                            Text("Next",style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.w500),),
+                            SizedBox(width: 20.0,),
+                            Icon(Icons.arrow_forward_ios),
+                          ],
+                         
+                        ),
+                       ),
                      ),
                    ],
                  ),

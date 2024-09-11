@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Detailpage extends StatefulWidget {
-  const Detailpage({super.key});
+class Detailpage2 extends StatefulWidget {
+  const Detailpage2({super.key});
 
   @override
-  State<Detailpage> createState() => _DetailpageState();
+  State<Detailpage2> createState() => _DetailpageState();
 }
 
-class _DetailpageState extends State<Detailpage> {
+class _DetailpageState extends State<Detailpage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.white,
@@ -20,7 +20,7 @@ class _DetailpageState extends State<Detailpage> {
               children: [
                 Container(
                   padding: EdgeInsets.only(top: 50,left: 20.0),
-                  decoration: BoxDecoration(color: Color(0xffffe08e),borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),bottomRight: Radius.circular(40))),
+                  decoration: BoxDecoration(color: Colors.red.shade100,borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),bottomRight: Radius.circular(40))),
                   height: MediaQuery.of(context).size.height/4 ,
                   width: MediaQuery.of(context).size.width,
                   child:
@@ -37,7 +37,7 @@ class _DetailpageState extends State<Detailpage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 50.0),
-                  child: Center(child: Image.asset("images/orange.png",height: 300,width: 300,fit: BoxFit.cover,)),
+                  child: Center(child: Image.asset("images/apple.png",height: 300,width: 300,fit: BoxFit.cover,)),
                 )
               ],
             ),
@@ -46,10 +46,10 @@ class _DetailpageState extends State<Detailpage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Orange - Medium",style: TextStyle(color: Colors.black,fontSize: 26.0,fontWeight: FontWeight.bold),),
+                Text("Apple - Medium",style: TextStyle(color: Colors.black,fontSize: 26.0,fontWeight: FontWeight.bold),),
                 Text("Each(500g - 700g)",style: TextStyle(color: Colors.black,fontSize: 20.0,fontWeight: FontWeight.bold),),
                 SizedBox(height: 20,),
-                Text("Oranges are a type of healthy, low calorie, highly nutritious citrus fruit. As part of a healthful and varied diet, Oranges contribute to strong, clear skin and can help lower a person’s risk of many conditions.Oranges are an important food source in many parts of the world for several reasons. They are a commonly available source of vitamin C.",style: TextStyle(color: Colors.black54,fontSize: 18.0,fontWeight: FontWeight.bold),),
+                Text("Apples are a type of healthy, low calorie, highly nutritious fruit. As part of a healthful and varied diet, apples contribute to strong, clear skin and can help lower a person’s risk of many conditions.apples are an important food source in many parts of the world for several reasons. They are a commonly available source of vitamin B.",style: TextStyle(color: Colors.black54,fontSize: 18.0,fontWeight: FontWeight.bold),),
                 SizedBox(height: 20.0,),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +76,7 @@ class _DetailpageState extends State<Detailpage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                    children: [
-                     Text("\$2.99",style: TextStyle(color: Colors.black,fontSize: 28.0,fontWeight: FontWeight.bold),),
+                     Text("\$1.99",style: TextStyle(color: Colors.black,fontSize: 28.0,fontWeight: FontWeight.bold),),
                   Container(
                     padding: EdgeInsets.only(left: 10.0,right: 10.0,top: 3.0,bottom: 3.0),
                     margin: EdgeInsets.only(right: 10),

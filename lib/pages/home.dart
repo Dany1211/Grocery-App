@@ -1,3 +1,5 @@
+import 'package:GROCERY_APP/pages/detailpage.dart';
+import 'package:GROCERY_APP/pages/detailpage2.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -89,12 +91,17 @@ class _HomeState extends State<Home> {
                              Center(child: Image.asset("images/orange.png",height: 145,width: 150,fit: BoxFit.cover,)),
                              Row(
                               children:[
-                              Container(
-                                padding: EdgeInsets.all(2),
-                                decoration: BoxDecoration(color: Color(0xffffeabf),borderRadius: BorderRadius.circular(5)),
-                                
-                                margin: EdgeInsets.only(left: 120),
-                                child: Icon(Icons.add,color: Colors.orange,size: 30,weight: 80,),
+                              GestureDetector(
+                                onTap: () {
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Detailpage()));
+                                },
+                                child: Container(
+                                  padding: EdgeInsets.all(2),
+                                  decoration: BoxDecoration(color: Color(0xffffeabf),borderRadius: BorderRadius.circular(5)),
+                                  
+                                  margin: EdgeInsets.only(left: 120),
+                                  child: Icon(Icons.add,color: Colors.orange,size: 30,weight: 80,),
+                                ),
                               ),
                                
                               ],
@@ -119,12 +126,17 @@ class _HomeState extends State<Home> {
                              Center(child: Image.asset("images/apple.png",height: 145,width: 150,fit: BoxFit.cover,)),
                              Row(
                               children:[
-                              Container(
-                                padding: EdgeInsets.all(2),
-                                decoration: BoxDecoration(color: Color(0xffffeabf),borderRadius: BorderRadius.circular(5)),
-                                
-                                margin: EdgeInsets.only(left: 120),
-                                child: Icon(Icons.add,color: Colors.orange,size: 30,weight: 80,),
+                              GestureDetector(
+                                onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Detailpage2()));
+                      },
+                                child: Container(
+                                  padding: EdgeInsets.all(2),
+                                  decoration: BoxDecoration(color: Color(0xffffeabf),borderRadius: BorderRadius.circular(5)),
+                                  
+                                  margin: EdgeInsets.only(left: 120),
+                                  child: Icon(Icons.add,color: Colors.orange,size: 30,weight: 80,),
+                                ),
                               ),
                                
                               ],
