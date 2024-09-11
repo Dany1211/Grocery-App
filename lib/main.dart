@@ -1,4 +1,5 @@
 
+import 'package:GROCERY_APP/pages/detailpage.dart';
 import 'package:GROCERY_APP/pages/home.dart';
 import 'package:GROCERY_APP/pages/landing.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:Home(),
+      home:Landing(),
     );  
   }
 }

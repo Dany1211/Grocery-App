@@ -16,7 +16,7 @@ class _LandingState extends State<Landing> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             Image.asset("images/grocery.png"),
+             Image.asset("images/grocery.jpg"),
              SizedBox(height: 30.0,),
              Text("Order your\nfavourite fruits",style: TextStyle(color: Colors.black,fontSize: 34,fontWeight: FontWeight.bold),),
              SizedBox(height: 20.0,),
